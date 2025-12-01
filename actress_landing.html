@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celli Pitt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .photo {
+            width: 100%;
+            max-width: 400px;
+            height: 500px;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            background: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .shows {
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        .shows-title {
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            opacity: 0.5;
+        }
+
+        .ticket-icon {
+            width: 36px;
+            height: 36px;
+        }
+
+        .instagram-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .photo {
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop" alt="Actress Photo" class="photo">
+        <h1>Celli Pitt</h1>
+        <div class="shows">
+            <div class="shows-title">Upcoming Shows:</div>
+            <div>Dec 13 from 7pm to 10pm EST</div>
+        </div>
+        <div class="links">
+            <a href="https://www.eventbrite.com/e/rooted-in-us-a-jazz-corner-juke-starring-ms-celli-pitt-friends-tickets-1956457730739?aff=oddtdtcreator" target="_blank" aria-label="Buy Tickets">
+                <svg class="ticket-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 7c0-.6.4-1 1-1h16c.6 0 1 .4 1 1v2c-1.1 0-2 .9-2 2s.9 2 2 2v2c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1v-2c1.1 0 2-.9 2-2s-.9-2-2-2V7z"></path>
+                    <path d="M10 9v6"></path>
+                    <path d="M10 12h4"></path>
+                    <path d="M14 9v6"></path>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/foxceely?igsh=OWVvbzFjMHhwNG80" target="_blank" aria-label="Instagram">
+                <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
